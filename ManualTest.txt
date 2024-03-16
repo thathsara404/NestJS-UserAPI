@@ -1,0 +1,53 @@
+GET http://localhost:3000/health
+content-type: application/json
+
+
+
+GET http://localhost:3000/users/thathsara@gmail.com
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MTYyNTEsImV4cCI6MTcxMDYxNjU1MX0.Qx2WZG4D_LURzVuWoho9ROcYk3a0O-txsL25CJ1nAEU
+
+
+
+GET http://localhost:3000/users?limit=10&skip=0
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MjE4NjAsImV4cCI6MTcxMDYyMjE2MH0.uiX0BEoTs55iuT3tjOP4n1uEmd-LGecv1qRhJG7-3S4
+
+
+
+POST http://localhost:3000/users
+content-type: application/json
+
+{
+    "firstName": "thathsara",
+    "lastName": "raviraj",
+    "email": "thathsara@gmail.com",
+    "password": "pas1!word"
+}
+
+
+
+PATCH http://localhost:3000/users/thathsara@gmail.com
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MTYyNTEsImV4cCI6MTcxMDYxNjU1MX0.Qx2WZG4D_LURzVuWoho9ROcYk3a0O-txsL25CJ1nAEU
+
+{
+    "firstName": "thathsaraa",
+    "lastName": "raviraj"
+}
+
+
+
+POST http://localhost:3000/users/login
+content-type: application/json
+
+{
+    "email": "thathsara@gmail.com",
+    "password": "pas1!word"
+}
+
+
+
+DELETE http://localhost:3000/users/thathsara@gmail.com
+content-type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MTYxOTcsImV4cCI6MTcxMDYxNjQ5N30.-nukJkKlmG5C7CLYFC4ShL1ztGnSRyZNDMr14TkooMQ
