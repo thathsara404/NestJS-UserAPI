@@ -30,6 +30,8 @@ $ yarn run start:prod
 
 ## Test
 
+To test the APIs manually you can use [VS Code REST Client](https://marketplace.visualstudio.com/items?itemName=humao.rest-client) with my manual test [file](https://github.com/thathsara404/NestJS-UserAPI/blob/master/ManualTest.txt) 
+
 ```bash
 # unit tests
 $ yarn run test
