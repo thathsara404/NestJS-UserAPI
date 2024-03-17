@@ -14,6 +14,6 @@ async function bootstrap() {
   app.useGlobalFilters(new UnsupportedContentTypeExceptionFilter()); // Catch thrown exception from ContentTypeValidationMiddleware
   const configService = app.get(ConfigService);
   console.log(`DB URI: ${configService.get('MONGO_URI')}`);
-  await app.listen(3000);
+  await app.listen(8080);
 }
 bootstrap();
