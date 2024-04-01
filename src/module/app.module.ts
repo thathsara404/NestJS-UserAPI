@@ -5,15 +5,17 @@ import { UserModule } from './user.module';
 import { ContentTypeValidationMiddleware } from 'src/middleware/ContentTypeValidationMiddleware';
 import { MongooseConnectionModule } from './mongoose.module';
 import { LoggerModule } from './logger.module';
+import { JwtStrategy } from 'src/strategy/JwtStrategy';
 
 @Module({
   imports: [
     ConfigModule.forRoot({ isGlobal: true }),
+    LoggerModule.forRoot(),
     MongooseConnectionModule,
-    LoggerModule,
     HealthModule,
     UserModule,
   ],
+  providers: [JwtStrategy],
 })
 export class AppModule {
   configure(consumer: MiddlewareConsumer) {

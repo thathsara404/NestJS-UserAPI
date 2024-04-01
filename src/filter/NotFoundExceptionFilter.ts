@@ -21,6 +21,6 @@ export class NotFoundExceptionFilter implements ExceptionFilter {
       errors: message as string,
     };
 
-    response.status(HttpStatus.CONFLICT).json(responseBody);
+    response.status(HttpStatus.NOT_FOUND).json(responseBody);
   }
 }

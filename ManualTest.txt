@@ -1,21 +1,21 @@
-GET http://localhost:3000/health
+GET http://localhost:8080/health
 content-type: application/json
 
 
 
-GET http://localhost:3000/users/thathsara@gmail.com
+GET http://localhost:8080/users/thathsara@gmail.com
 content-type: application/json
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MTYyNTEsImV4cCI6MTcxMDYxNjU1MX0.Qx2WZG4D_LURzVuWoho9ROcYk3a0O-txsL25CJ1nAEU
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTE5NTgzMjcsImV4cCI6MTcxMTk1ODYyN30.DKHyd2nz2MPFYka27RD55rVzxk_DEcjIqAo3YbjrRpc
 
 
 
-GET http://localhost:3000/users?limit=10&skip=0
+GET http://localhost:8080/users?limit=10&skip=0
 content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MjE4NjAsImV4cCI6MTcxMDYyMjE2MH0.uiX0BEoTs55iuT3tjOP4n1uEmd-LGecv1qRhJG7-3S4
 
 
 
-POST http://localhost:3000/users
+POST http://localhost:8080/users
 content-type: application/json
 
 {
@@ -27,7 +27,7 @@ content-type: application/json
 
 
 
-PATCH http://localhost:3000/users/thathsara@gmail.com
+PATCH http://localhost:8080/users/thathsara@gmail.com
 content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MTYyNTEsImV4cCI6MTcxMDYxNjU1MX0.Qx2WZG4D_LURzVuWoho9ROcYk3a0O-txsL25CJ1nAEU
 
@@ -38,7 +38,7 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc
 
 
 
-POST http://localhost:3000/users/login
+POST http://localhost:8080/users/login
 content-type: application/json
 
 {
@@ -48,6 +48,6 @@ content-type: application/json
 
 
 
-DELETE http://localhost:3000/users/thathsara@gmail.com
+DELETE http://localhost:8080/users/thathsara@gmail.com
 content-type: application/json
 Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRoYXRoc2FyYUBnbWFpbC5jb20iLCJpYXQiOjE3MTA2MTYxOTcsImV4cCI6MTcxMDYxNjQ5N30.-nukJkKlmG5C7CLYFC4ShL1ztGnSRyZNDMr14TkooMQ

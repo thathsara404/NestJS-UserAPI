@@ -16,11 +16,11 @@ export class UnAuthorizedExceptionFilter implements ExceptionFilter {
     const message = exception.getResponse();
     // Construct a custom response based on your needs
     const responseBody = {
-      statusCode: HttpStatus.CONFLICT,
+      statusCode: HttpStatus.UNAUTHORIZED,
       message: 'Unauthorized',
       errors: message as string,
     };
 
-    response.status(HttpStatus.CONFLICT).json(responseBody);
+    response.status(HttpStatus.UNAUTHORIZED).json(responseBody);
   }
 }
